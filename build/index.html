@@ -1,0 +1,1510 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind UI copy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- When nav is toggled on small screens, I want the body to take screen height and not scroll down-->
+  <body class="relative">
+    <!-- Header container -->
+    <header class="px-4 sm:px-6 lg:px-8 flex max-w-[1400px] mx-auto">
+      <!-- Navigation bar -->
+      <nav class="py-[34px] flex w-full items-center">
+        <!-- The Tailwind css UI logo, fixed width and height -->
+        <a
+          href="#"
+          class="w-40 h-6 flex justify-between items-center cursor-pointer"
+        >
+          <img
+            src="img/Tailwind-CSS1.svg"
+            width="34.40"
+            height="20.57"
+            alt="tailwind logo"
+          />
+          <div class="flex items-center font-medium text-[26px] align-middle">
+            <h2 class="leading-[19.11px]">tailwind</h2>
+          </div>
+          <div
+            class="border-2 border-slate-950 rounded w-[18.72px] h-[18.86px] flex items-center justify-center text-xs leading-[12px] font-medium"
+          >
+            UI
+          </div>
+        </a>
+        <!-- White background rounded link group shows only medium screens and hides back above large screens -->
+        <div
+          class="hidden sm:flex lg:hidden rounded-full border border-slate-300 bg-white -my-2 ml-6 py-2 px-3 items-center gap-2 text-xs xl:flex"
+        >
+          <img
+            width="14"
+            height="14"
+            src="img/icons8-sparkling-50.png"
+            alt="stars"
+          />
+          <a class="font-semibold" href="#">Introducing Catalyst</a>
+          <?xml version="1.0" ?><svg
+            class="bi bi-dot"
+            fill="currentColor"
+            height="14"
+            viewBox="0 0 16 16"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          </svg>
+          <a class="md:hidden" href="#">Our new React UI kit </a>
+          <a class="hidden md:inline-block" href="#"
+            >A modern application UI kit for React</a
+          >
+          <button>
+            <img src="img/icons8-forward-14.png" alt="forward arrow" />
+          </button>
+        </div>
+        <!-- The component , template and docs container. Shows above lg screens -->
+        <div
+          class="ml-auto hidden lg:flex items-center justify-between gap-4 font-semibold"
+        >
+          <a href="#">Components</a>
+          <a href="#">Templates</a>
+          <a href="#">Docs</a>
+        </div>
+        <!-- Search Icon -->
+        <button class="ml-auto -my-1 lg:ml-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0 0 30 30"
+          >
+            <path
+              d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+            ></path>
+          </svg>
+        </button>
+        <!-- When on xl above screens, expand this and hide menu icon -->
+        <div
+          class="pl-8 ml-8 items-center hidden lg:flex border border-transparent border-l-slate-400 h-[80%] font-semibold gap-4"
+        >
+          <a href="#">Sign in</a>
+          <button
+            class="py-[10px] px-4 flex items-center gap-2 bg-slate-900 rounded-md text-white"
+          >
+            <p>Get all-access</p>
+            <svg
+              class="w-3"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                fill="#ffffff"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <button id="hamburger-icon" class="-my-1 -mr-1 ml-6 w-6 h-6 lg:hidden">
+          <svg
+            class="font-bold"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="20"
+            height="20"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- This is the toggle nav bar -->
+      <div
+        id="expanded-menu"
+        class="w-full min-h-full absolute z-20 top-0 right-0 hidden lg:hidden"
+      >
+        <!-- Blur the showing background and this should grow over the width -->
+        <div class="backdrop-blur-sm bg-white/5 flex-auto"></div>
+        <!-- This the nav, it should take width of content -->
+        <nav
+          class="bg-white shadow-lg w-80 font-semibold text-lg"
+        >
+          <div
+            class="flex px-8 py-6 items-center justify-between border-b border-b-slate-200"
+          >
+          <a href="#hero"><img
+              src="img/Tailwind-CSS1.svg"
+              width="34.40"
+              height="20.57"
+              alt="tailwind logo"
+
+            /></a>
+            <button id="btn-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                class="fill-slate-900 w-8 h-8"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="px-8 py-6 border-b border-b-slate-200">
+            <li class="py-2"><a href="#components">Components</a></li>
+            <li class="py-2 mt-2"><a href="#templates">Templates</a></li>
+            <li class="py-2 mt-2"><a href="#footer">Documentation</a></li>
+          </ul>
+          <div class="px-8 py-6">
+            <a href="#" class="py-2"> Sign in</a>
+            <button
+              class="py-[10px] px-4 flex gap-2 bg-slate-900 rounded-md text-white w-full items-center justify-center mt-6"
+            >
+              <p>Get all-access</p>
+              <svg
+                class="w-3"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main of my page -->
+    <main class="overflow-hidden">
+      <!-- This is the first section -->
+      <!-- This section is a grid layout with just 1 column -->
+      <section
+        id="hero" class="my-16 grid grid-cols-1 px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto" 
+      >
+        <!-- Row 1 of grid -->
+        <div
+          class="col-start-1 row-start-1 font-semibold text-base text-my-green h-7"
+        >
+          By the makers of Tailwind CSS
+        </div>
+        <!-- Row 2 of grid -->
+        <h1
+          class="text-2xl font-extrabold mt-4 col-start-1 row-start-2 sm:text-7xl max-w-2xl xl:max-w-3xl"
+        >
+          Build your next idea even faster.
+        </h1>
+        <!-- Row 3 of grid -->
+        <p class="mt-4 text-lg text-slate-700 col-start-1 row-start-3 max-w-lg">
+          Beautifully designed, expertly crafted components and templates, built
+          by the maker of Tailwins CSS. The perfect starting point for your next
+          project.
+        </p>
+        <!-- Row 4 of grid -->
+        <!-- Contains two buttons, flex column on small screens and flex row on larger screens -->
+        <div
+          class="col-start-1 row-start-4 flex flex-col my-10 sm:my-0 gap-4 text-base sm:flex-row"
+        >
+          <button
+            class="px-4 py-3 rounded-lg font-semibold text-white bg-slate-900"
+          >
+            <p>
+              Browse components
+              <span class="hidden sm:inline text-slate-400"> ➝</span>
+            </p>
+          </button>
+          <button
+            class="px-4 py-3 rounded-lg font-semibold text-slate-900 border border-slate-400"
+          >
+            <p>
+              Explore templates
+              <span class="hidden sm:inline text-slate-400"> ➝</span>
+            </p>
+          </button>
+        </div>
+        <!-- Row 5 of grid -->
+        <!-- This part changes position based on screen size -->
+        <!-- For small screen, it starts below the buttons above-->
+        <!-- For medium screens, it starts on the third row as the p text -->
+        <!-- For large screens, it starts on the second row-->
+        <!-- Above xl screens, it starts on the first row -->
+        <!-- The content is fixed at the right side i.e end of the container -->
+        <div
+          id="moving-grid-section"
+          class="col-start-1 row-start-5 flex flex-col items-end text-xs sm:row-start-4 sm:row-span-2 md:row-start-3 md:row-span-3 lg:row-start-2 lg:row-span-4 xl:row-start-1 xl:row-span-5 sm:min-w-[900px] md:min-w-[950px] lg:min-w-[1200px] xl:min-w-[1300px]"
+        >
+          <!-- This contains the buttons and profiles -->
+          <div class="flex items-end">
+            <!-- Switches and buttons and Bookmarks-->
+            <div class="flex flex-col">
+              <div class="p-4">
+                <!-- Switch one  -->
+                <div class="flex justify-end">
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <!-- Switch and button group -->
+                <div class="flex items-center mt-6 justify-between">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <button
+                    class="px-2 py-2 bg-violet-600 text-white rounded-md text-base font-semibold min-w-[64px]"
+                  >
+                    Button A
+                  </button>
+                </div>
+              </div>
+              <!-- Bookmarks -->
+              <div class="p-4 border border-slate-400 border-r-0">
+                <div
+                  class="flex items-center w-[180px] h-12 bg-white justify-evenly rounded-md text-base font-medium"
+                >
+                  <svg
+                    class="w-3 h-6 fill-slate-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                    />
+                  </svg>
+                  <p>Bookmark</p>
+                  <div class="h-full w-0.5 bg-slate-200"></div>
+                  <p>12k</p>
+                </div>
+              </div>
+            </div>
+            <!-- Profiles -->
+            <div class="p-4 border border-slate-400 sm:text-base text-xs">
+              <div class="bg-white w-[21.5em] lg:w-[32.5em] rounded-md">
+                <!-- Profile 1 -->
+                <div class="flex p-4 border border-b-slate-200">
+                  <img
+                    src="img/jay.jpg"
+                    alt="profile picture"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <div class="ml-4 flex-auto">
+                    <p class="font-medium">Leonard Krasner</p>
+                    <p class="mt-2">@leonardkrasner</p>
+                  </div>
+                  <button
+                    class="border border-slate-200 rounded-md p-2 font-medium"
+                  >
+                    View
+                  </button>
+                </div>
+                <!-- Profile 2 -->
+                <div class="flex p-4 border border-b-slate-200">
+                  <img
+                    src="img/jay.jpg"
+                    alt="profile picture"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <div class="ml-4 flex-auto">
+                    <p class="font-medium">Leonard Krasner</p>
+                    <p class="mt-2">@leonardkrasner</p>
+                  </div>
+                  <button
+                    class="border border-slate-200 rounded-md p-2 font-medium"
+                  >
+                    View
+                  </button>
+                </div>
+                <!-- Profile 3 -->
+                <div class="flex p-4 border border-b-slate-200">
+                  <img
+                    src="img/jay.jpg"
+                    alt="profile picture"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <div class="ml-4 flex-auto">
+                    <p class="font-medium">Leonard Krasner</p>
+                    <p class="mt-2">@leonardkrasner</p>
+                  </div>
+                  <button
+                    class="border border-slate-200 rounded-md p-2 font-medium"
+                  >
+                    View
+                  </button>
+                </div>
+                <div class="p-4">
+                  <button
+                    class="px-4 py-2 font-semibold w-full border border-slate-200 rounded-md"
+                  >
+                    View all
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- This contains the media player  -->
+          <div class="p-4">
+            <div
+              class="bg-white rounded-xl h-16 flex items-center w-[735px] text-base"
+            >
+              <div
+                class="flex gap-4 items-center py-4 px-6 border border-r-slate-200 h-full"
+              >
+                <svg
+                  class="rotate-180 h-6 w-6 -z-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M18.4 445c11.2 5.3 24.5 3.6 34.1-4.4L224 297.7V416c0 12.4 7.2 23.7 18.4 29s24.5 3.6 34.1-4.4L448 297.7V416c0 17.7 14.3 32 32 32s32-14.3 32-32V96c0-17.7-14.3-32-32-32s-32 14.3-32 32V214.3L276.5 71.4c-9.5-7.9-22.8-9.7-34.1-4.4S224 83.6 224 96V214.3L52.5 71.4c-9.5-7.9-22.8-9.7-34.1-4.4S0 83.6 0 96V416c0 12.4 7.2 23.7 18.4 29z"
+                  />
+                </svg>
+                <div class="rounded-full w-10 h-10 bg-slate-900 py-2">
+                  <svg
+                    class="w-6 h-6 fill-white mx-auto"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                    />
+                  </svg>
+                </div>
+                <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M18.4 445c11.2 5.3 24.5 3.6 34.1-4.4L224 297.7V416c0 12.4 7.2 23.7 18.4 29s24.5 3.6 34.1-4.4L448 297.7V416c0 17.7 14.3 32 32 32s32-14.3 32-32V96c0-17.7-14.3-32-32-32s-32 14.3-32 32V214.3L276.5 71.4c-9.5-7.9-22.8-9.7-34.1-4.4S224 83.6 224 96V214.3L52.5 71.4c-9.5-7.9-22.8-9.7-34.1-4.4S0 83.6 0 96V416c0 12.4 7.2 23.7 18.4 29z"
+                  />
+                </svg>
+              </div>
+              <p class="ml-4">00:51</p>
+              <div class="flex ml-4 items-center">
+                <div class="w-32 h-2 bg-violet-600 rounded-s-full"></div>
+                <div class="w-1.5 h-6 bg-violet-600 ml-0.5 rounded-xl"></div>
+                <div class="w-52 h-2 rounded-e-full bg-slate-200"></div>
+              </div>
+              <p class="ml-4">55:43</p>
+              <svg
+                class="ml-auto w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 mx-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 128 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- This  contains the bottom part of this section-->
+          <!-- There is flex display divided into two. Left and right-->
+          <div class="flex">
+            <!-- The left part  -->
+            <div class="flex flex-col">
+              <!-- The left part is also a flex and divided into two -->
+              <!-- The upper left part is further divided into two, top and bottom -->
+              <!-- Top -->
+              <div class="flex items-end">
+                <!-- Top left -->
+                <div class="flex flex-col gap-4">
+                  <div class="p-4">
+                    <div
+                      class="flex bg-white rounded-lg border font-medium text-sm w-[195.34px] ml-auto"
+                    >
+                      <div class="px-4 py-3">Years</div>
+                      <div class="px-3 py-3 border-l border-r-slate-200">
+                        Months
+                      </div>
+                      <div class="px-3 py-3 border-l border-r-slate-200">
+                        Days
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-4 border-2 border-slate-400">
+                    <div
+                      class="flex px-4 py-6 items-center gap-6 w-[400px] bg-white rounded-lg border"
+                    >
+                      <svg
+                        class="w-6 h-6 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                        />
+                      </svg>
+                      <div class="flex-auto">
+                        <svg
+                          class="w-10 h-10 -rotate-[30deg] fill-[#17b8b8]"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="flex w-8 h-8 p-1 border border-slate-200 rounded-md"
+                      >
+                        <svg
+                          class="w-6 h-6 fill-[#17b8b8]"
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="100"
+                          height="100"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M 11 0 L 11 3 L 13 3 L 13 0 L 11 0 z M 4.2226562 2.8085938 L 2.8085938 4.2226562 L 4.9296875 6.34375 L 6.34375 4.9296875 L 4.2226562 2.8085938 z M 19.777344 2.8085938 L 17.65625 4.9296875 L 19.070312 6.34375 L 21.191406 4.2226562 L 19.777344 2.8085938 z M 12 5 A 7 7 0 0 0 5 12 A 7 7 0 0 0 12 19 A 7 7 0 0 0 19 12 A 7 7 0 0 0 12 5 z M 0 11 L 0 13 L 3 13 L 3 11 L 0 11 z M 21 11 L 21 13 L 24 13 L 24 11 L 21 11 z M 4.9296875 17.65625 L 2.8085938 19.777344 L 4.2226562 21.191406 L 6.34375 19.070312 L 4.9296875 17.65625 z M 19.070312 17.65625 L 17.65625 19.070312 L 19.777344 21.191406 L 21.191406 19.777344 L 19.070312 17.65625 z M 11 21 L 11 24 L 13 24 L 13 21 L 11 21 z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="flex gap-2 items-center">
+                        <p class="text-base font-semibold">v3.0</p>
+                        <svg
+                          class="w-4 h-4 fill-slate-400"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"
+                          />
+                        </svg>
+                      </div>
+                      <svg
+                        class="fill-[#17b8b8] w-6 h-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Top right -->
+                <div class="p-4 flex-col">
+                  <!-- NEWSLETTER -->
+                  <div
+                    class="news-existing bg-white border p-4 min-w-[360px] rounded-lg text-sm hover:border-4 show-border-tick"
+                  >
+                    <div class="flex justify-between font-medium mb-3">
+                      <p>Newsletter</p>
+                      <svg
+                        class="w-5 h-5 fill-violet-500 hidden"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                        />
+                      </svg>
+                    </div>
+                    <p>Last message sent an hour ago</p>
+                    <p class="mt-8 font-medium">621 users</p>
+                  </div>
+                  <!-- Existing customers -->
+                  <div
+                    class="news-existing bg-white border p-4 min-w-[360px] rounded-lg text-sm mt-4"
+                  >
+                    <div class="flex justify-between font-medium mb-3">
+                      <p>Existing customers</p>
+                      <svg
+                        class="w-5 h-5 fill-violet-500 hidden"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                        />
+                      </svg>
+                    </div>
+                    <p>Last message sent an hour ago</p>
+                    <p class="mt-8 font-medium">1200 users</p>
+                  </div>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="flex justify-end">
+                <!-- bottom left -->
+                <div
+                  class="p-4 border-2 h-[202px] border-r-0 border-t-0 border-slate-400"
+                >
+                  <div
+                    class="bg-white p-4 flex flex-col gap-2 rounded-lg border w-44"
+                  >
+                    <!-- Light -->
+                    <div
+                      class="flex gap-4 items-center hover:bg-slate-100 rounded-lg p-1"
+                    >
+                      <div
+                        class="flex w-8 h-8 p-1 border border-slate-200 rounded-md"
+                      >
+                        <svg
+                          class="w-6 h-6 fill-[#17b8b8]"
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="100"
+                          height="100"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M 11 0 L 11 3 L 13 3 L 13 0 L 11 0 z M 4.2226562 2.8085938 L 2.8085938 4.2226562 L 4.9296875 6.34375 L 6.34375 4.9296875 L 4.2226562 2.8085938 z M 19.777344 2.8085938 L 17.65625 4.9296875 L 19.070312 6.34375 L 21.191406 4.2226562 L 19.777344 2.8085938 z M 12 5 A 7 7 0 0 0 5 12 A 7 7 0 0 0 12 19 A 7 7 0 0 0 19 12 A 7 7 0 0 0 12 5 z M 0 11 L 0 13 L 3 13 L 3 11 L 0 11 z M 21 11 L 21 13 L 24 13 L 24 11 L 21 11 z M 4.9296875 17.65625 L 2.8085938 19.777344 L 4.2226562 21.191406 L 6.34375 19.070312 L 4.9296875 17.65625 z M 19.070312 17.65625 L 17.65625 19.070312 L 19.777344 21.191406 L 21.191406 19.777344 L 19.070312 17.65625 z M 11 21 L 11 24 L 13 24 L 13 21 L 11 21 z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="font-medium text-sm">Light</p>
+                    </div>
+                    <!-- Dark -->
+                    <div
+                      class="flex gap-4 items-center hover:bg-slate-100 rounded-lg p-1"
+                    >
+                      <div
+                        class="flex w-8 h-8 p-1 border border-slate-200 rounded-md"
+                      >
+                        <svg
+                          class="w-6 h-6 fill-slate-400"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            d="M0 256C0 114.6 114.6 0 256 0c33 0 64.6 6.3 93.6 17.7c7.4 2.9 11.5 10.7 9.8 18.4s-8.8 13-16.7 12.4c-4.8-.3-9.7-.5-14.6-.5c-114.9 0-208 93.1-208 208s93.1 208 208 208c4.9 0 9.8-.2 14.6-.5c7.9-.5 15 4.7 16.7 12.4s-2.4 15.5-9.8 18.4C320.6 505.7 289 512 256 512C114.6 512 0 397.4 0 256zM375.4 137.4c3.5-7.1 13.7-7.1 17.2 0l31.5 63.8c1.4 2.8 4.1 4.8 7.2 5.3l70.4 10.2c7.9 1.1 11 10.8 5.3 16.4l-50.9 49.6c-2.3 2.2-3.3 5.4-2.8 8.5l12 70.1c1.3 7.8-6.9 13.8-13.9 10.1l-63-33.1c-2.8-1.5-6.1-1.5-8.9 0l-63 33.1c-7 3.7-15.3-2.3-13.9-10.1l12-70.1c.5-3.1-.5-6.3-2.8-8.5L261 233.1c-5.7-5.6-2.6-15.2 5.3-16.4l70.4-10.2c3.1-.5 5.8-2.4 7.2-5.3l31.5-63.8z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="font-medium text-sm">Dark</p>
+                    </div>
+                    <!-- System -->
+                    <div
+                      class="flex gap-4 items-center hover:bg-slate-100 rounded-lg p-1"
+                    >
+                      <div
+                        class="flex w-8 h-8 p-1 border border-slate-200 rounded-md"
+                      >
+                        <svg
+                          class="w-6 h-6 fill-slate-400"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                          <path
+                            d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="font-medium text-sm">System</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- bottom right -->
+                <div class="p-4 text-sm border-2 border-slate-400">
+                  <p class="font-semibold">Assigned to</p>
+                  <div
+                    class="p-4 bg-white flex border rounded-lg w-[500px] my-3 items-center justify-between"
+                  >
+                    <p>Tom Cook</p>
+                    <div>
+                      <svg
+                        class="w-3 h-3 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"
+                        />
+                      </svg>
+                      <svg
+                        class="w-3 h-3 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <ul class="py-1 bg-white border rounded-lg flex flex-col">
+                    <li
+                      class="assigned-names px-4 py-3 purple-hover keep-purple-hover"
+                    >
+                      Wade Cooper
+                    </li>
+                    <li class="assigned-names px-4 py-3 purple-hover">
+                      Arlene Mccoy
+                    </li>
+                    <li class="assigned-names px-4 py-3 purple-hover">
+                      Tom Cook
+                    </li>
+                    <li class="assigned-names px-4 py-3 purple-hover">
+                      Devon Webb
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- The right part -->
+            <div class="flex flex-col">
+              <!-- The right part is also divided into two -->
+              <!-- right Top section -->
+              <div class="p-4">
+                <div class="bg-white w-[400px] rounded-lg border">
+                  <div
+                    class="px-4 py-3 flex items-center gap-3 border-b border-b-slate-200"
+                  >
+                    <svg
+                      class="w-5 h-5 fill-slate-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                      />
+                    </svg>
+                    <p class="text-slate-400 flex-auto text-base">
+                      Search projects...
+                    </p>
+                  </div>
+                  <!-- Recent Searches -->
+                  <div class="p-4 border-b border-b-slate-200">
+                    <p class="font-semibold">Recent searches</p>
+                    <div
+                      class="recent_add flex items-center gap-3 purple-hover keep-purple-hover p-2 rounded-lg mt-3 text-sm"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M0 96C0 60.7 28.7 32 64 32H196.1c19.1 0 37.4 7.6 50.9 21.1L289.9 96H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V160c0-8.8-7.2-16-16-16H286.6c-10.6 0-20.8-4.2-28.3-11.7L213.1 87c-4.5-4.5-10.6-7-17-7H64z"
+                        />
+                      </svg>
+                      <p>Tailwind Labs / Website Redesign</p>
+                    </div>
+                    <div
+                      class="recent_add flex items-center gap-3 purple-hover p-2 rounded-lg text-sm"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M0 96C0 60.7 28.7 32 64 32H196.1c19.1 0 37.4 7.6 50.9 21.1L289.9 96H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V160c0-8.8-7.2-16-16-16H286.6c-10.6 0-20.8-4.2-28.3-11.7L213.1 87c-4.5-4.5-10.6-7-17-7H64z"
+                        />
+                      </svg>
+                      <p>Laravel LLC / Conference Branding</p>
+                    </div>
+                  </div>
+                  <div class="p-4 border-b border-b-slate-200">
+                    <!-- Add a new file -->
+                    <div
+                      class="recent_add flex items-center gap-3 purple-hover p-2 rounded-lg text-sm fill-on-hov"
+                    >
+                      <svg
+                        class="h-5 w-5 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384v38.6C310.1 219.5 256 287.4 256 368c0 59.1 29.1 111.3 73.7 143.3c-3.2 .5-6.4 .7-9.7 .7H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zm48 96a144 144 0 1 1 0 288 144 144 0 1 1 0-288zm16 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v48H368c-8.8 0-16 7.2-16 16s7.2 16 16 16h48v48c0 8.8 7.2 16 16 16s16-7.2 16-16V384h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H448V304z"
+                        />
+                      </svg>
+                      <p>Add new file...</p>
+                    </div>
+                    <!-- Add a new folder -->
+                    <div
+                      class="recent_add flex items-center gap-3 purple-hover p-2 rounded-lg text-sm fill-on-hov"
+                    >
+                      <svg
+                        class="h-5 w-5 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M512 416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H192c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8H448c35.3 0 64 28.7 64 64V416zM232 376c0 13.3 10.7 24 24 24s24-10.7 24-24V312h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H280V200c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H168c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"
+                        />
+                      </svg>
+                      <p>Add new folder...</p>
+                    </div>
+                    <!-- Add hashtag -->
+                    <div
+                      class="recent_add flex items-center gap-3 purple-hover p-2 rounded-lg text-sm fill-on-hov"
+                    >
+                      <svg
+                        class="h-5 w-5 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"
+                        />
+                      </svg>
+                      <p>Add hashtag...</p>
+                    </div>
+                    <!-- Add label -->
+                    <div
+                      class="recent_add flex items-center gap-3 purple-hover p-2 rounded-lg text-sm fill-on-hov"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-slate-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                        />
+                      </svg>
+                      <p>Add label...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- right bottom section -->
+              <div class="p-4">
+                <div
+                  class="bg-white w-[480px] p-4 text-gray-600 rounded-lg text-sm"
+                >
+                  <p class="font-semibold text-black">Account</p>
+                  <p class="py-3 border-b border-b-slate-400">
+                    Manage how information is displayed on your account
+                  </p>
+                  <p
+                    class="py-3 border-b border-b-slate-400 flex justify-between"
+                  >
+                    <span>Language</span>
+                    <span>English</span>
+                    <span class="text-violet-500 font-semibold">Update</span>
+                  </p>
+                  <div
+                    class="py-3 border-b border-b-slate-400 flex justify-between"
+                  >
+                    <span>Date format</span>
+                    <span>DD-MM-YYYY</span>
+                    <div class="text-violet-500 font-semibold flex gap-2">
+                      <p class="border-r border-r-slate-400 pr-2">Update</p>
+                      <p>Remove</p>
+                    </div>
+                  </div>
+                  <!-- Automatic time zone -->
+                  <div
+                    class="py-3 border-b border-b-slate-400 flex items-center"
+                  >
+                    <p>Automatic timezone</p>
+                    <label class="switch ml-auto">
+                      <input type="checkbox" checked />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <!-- Auto Update applicant data -->
+                  <div class="py-3 flex items-center">
+                    <p>Auto Update applicant data</p>
+                    <label class="switch ml-auto">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- This the second section -->
+      <!-- This is the components section -->
+      <section id="components" class="my-16 px-4 sm:px-6 lg:px-8 mx-auto max-w-[1400px]">
+        <p class="text-violet-600 font-semibold text-lg">Components</p>
+        <h1
+          class="text-4xl font-extrabold mt-4 text-slate-900 tracking-tight max-w-[670px]"
+        >
+          Beautifully crafted UI components, ready for your next project
+        </h1>
+        <p class="text-lg mt-4 max-w-[576px]">
+          Over 500+ professionally designed, fully responsive, expertly crafted
+          component examples you can drop into your Tailwind projects and
+          customize to your heart's content
+        </p>
+        <!-- Browse all components div -->
+        <div class="flex items-center gap-2 mt-4 mb-16">
+          <a href="" class="text-violet-600 font-semibold text-lg"
+            >Browse all components</a
+          >
+          <svg
+            class="w-4 h-4 fill-violet-600"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </div>
+        <!-- This is the section with three subsections -->
+        <!-- These are the three headings -->
+        <div
+          class="flex gap-4 md:gap-5 border-t border-t-slate-200 font-semibold text-lg"
+        >
+          <!-- Application UI heading -->
+          <h4 class="components-headings pt-8 md:basis-1/3 current-component">
+            Application UI
+          </h4>
+          <!--Marketing heading -->
+          <h4 class="components-headings pt-8 md:basis-1/3">Marketing</h4>
+          <!-- Ecommerce heading -->
+          <h4 class="components-headings pt-8 md:basis-1/3">Ecommerce</h4>
+        </div>
+        <!-- The text below each heading above -->
+        <!-- Only Application UI text shows on small pages initially, the other two are hidden -->
+        <!-- The other two should show up when the heading is clicked -->
+        <div class="flex md:gap-5">
+          <p class="component-headings-text mt-4 md:block md:basis-1/3">
+            Form layouts, tables, dialogs — everything you need to build
+            beautiful responsive web applications.
+          </p>
+          <p class="component-headings-text mt-4 hidden md:block md:basis-1/3">
+            Heroes, features sections, newsletter sign up forms — everything you
+            need to build beautiful marketing websites.
+          </p>
+          <p class="component-headings-text mt-4 hidden md:block md:basis-1/3">
+            Checkout forms, shopping carts, product reviews — everything you
+            need to build your next ecommerce front-end.
+          </p>
+        </div>
+        <!-- This is the application UI designs -->
+        <div
+          class="heading-body mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 relative"
+        >
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="sm:opacity-15 lg:opacity-100">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="opacity-15 lg:opacity-100">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden lg:block lg:opacity-15 xl:opacity-100">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden lg:block lg:opacity-15 xl:opacity-100">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 lg:block">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 xl:block">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 xl:block">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden">
+            <img
+              src="img/stacked.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <button
+            class="p-3 text-white absolute bottom-0 bg-slate-900 rounded-lg -translate-x-1/2 translate-y-1/2 left-1/2 text-sm font-semibold"
+          >
+            Show more....
+          </button>
+        </div>
+        <!-- This is the marketing designs -->
+        <div
+          class="heading-body mt-6 hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full relative"
+        >
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="sm:opacity-15 lg:opacity-100">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="opacity-15 lg:opacity-100">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden lg:block lg:opacity-15 xl:opacity-100">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden lg:block lg:opacity-15 xl:opacity-100">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 lg:block">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 xl:block">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 xl:block">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden">
+            <img
+              src="img/heroes.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <button
+            class="p-3 text-white absolute bottom-0 bg-slate-900 rounded-lg -translate-x-1/2 translate-y-1/2 left-1/2 text-sm font-semibold"
+          >
+            Show more....
+          </button>
+        </div>
+        <!-- This is the ecommerce designs -->
+        <div
+          class="heading-body mt-6 hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full relative"
+        >
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div>
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="sm:opacity-15 lg:opacity-100">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="opacity-15 lg:opacity-100">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden lg:block lg:opacity-15 xl:opacity-100">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden lg:block lg:opacity-15 xl:opacity-100">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 lg:block">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 xl:block">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden opacity-15 xl:block">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <!-- Stacked Layouts -->
+          <div class="hidden">
+            <img
+              src="img/product-lists.png"
+              alt="dashboard"
+              class="rounded-lg w-full"
+            />
+            <h2 class="mt-3 text-lg font-medium">Stacked Layouts</h2>
+            <p class="mt-2 text-sm">9 components</p>
+          </div>
+          <button
+            class="p-3 text-white absolute bottom-0 bg-slate-900 rounded-lg -translate-x-1/2 translate-y-1/2 left-1/2 text-sm font-semibold"
+          >
+            Show more....
+          </button>
+        </div>
+      </section>
+      <!-- This the third section -->
+      <!-- This is the templates section -->
+      <section id="templates" class="pt-30 mb-32 sm:px-6 lg:px-8 mx-auto max-w-[1400px]">
+        <p class="text-blue-600 font-semibold text-lg px-4">Templates</p>
+        <h1
+          class="text-4xl font-extrabold mt-4 text-slate-900 tracking-tight max-w-[670px] px-4"
+        >
+          Production-ready website templates, built the way you want them.
+        </h1>
+        <p class="text-lg mt-4 max-w-[576px] px-4">
+          Visually-stunning, easy to customize site templates built with React
+          and Next.js. The perfect starting point for your next project and the
+          ultimate resource for learning how experts build real websites with
+          Tailwind CSS.
+        </p>
+        <!-- Explore all templates -->
+        <div class="flex items-center gap-2 mt-4 mb-20 px-4">
+          <a href="" class="text-blue-600 font-semibold text-lg"
+            >Explore all templates</a
+          >
+          <svg
+            class="w-4 h-4 fill-violet-600"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </div>
+        <!-- This is the section with four templates headings and subheadings -->
+        <div class="flex overflow-x-auto flex-nowrap gap-2">
+          <!-- PRIMER -->
+          <div
+            class="template-heading py-8 min-w-[120px] md:min-w-[285px] px-4 premier-current"
+          >
+            <div class="flex flex-col md:flex-col-reverse gap-4">
+              <h3 class="font-semibold text-lg md:text-black">Primer</h3>
+              <p
+                class="md:bg-slate-200 md:rounded-2xl md:p-2 md:font-semibold md:text-slate-600 md:text-sm max-w-[fit-content]"
+              >
+                Info product
+              </p>
+            </div>
+            <p class="mt-1 hidden md:block">
+              We've actually published four info products ourselves and this
+              landing page is honestly better than the sites we designed for all
+              of those.
+            </p>
+          </div>
+          <!-- Transmit -->
+          <div
+            class="template-heading pl-8 py-8 min-w-[150px] md:min-w-[285px]"
+          >
+            <div class="flex flex-col md:flex-col-reverse gap-4">
+              <h3 class="font-semibold text-lg md:text-black">Transmit</h3>
+              <p
+                class="md:bg-slate-200 md:rounded-2xl md:p-2 md:font-semibold md:text-slate-600 md:text-sm max-w-[fit-content]"
+              >
+                Podcast
+              </p>
+            </div>
+            <p class="mt-1 hidden md:block">
+              You've ordered your SM7B, boom arm, and a bunch of acoustic foam.
+              With this template, you can finally stop procatinating and record
+              your first episode.
+            </p>
+          </div>
+          <!-- Syntax -->
+          <div
+            class="template-heading pl-8 py-8 min-w-[154px] md:min-w-[285px]"
+          >
+            <div class="flex flex-col md:flex-col-reverse gap-4">
+              <h3 class="font-semibold text-lg md:text-black">Syntax</h3>
+              <p
+                class="md:bg-slate-200 md:rounded-2xl md:p-2 md:font-semibold md:text-slate-600 md:text-sm max-w-[fit-content]"
+              >
+                Documentation
+              </p>
+            </div>
+            <p class="mt-2 hidden md:block">
+              Writing Documentation is enough to make you rip your hair out
+              without worrying about the design. Let us help you keep a few
+              strands.
+            </p>
+          </div>
+          <!-- Salient -->
+          <div
+            class="template-heading pl-8 py-8 min-w-[154px] md:min-w-[285px]"
+          >
+            <div class="flex flex-col md:flex-col-reverse gap-4">
+              <h3 class="font-semibold text-lg md:text-black">Salient</h3>
+              <p
+                class="md:bg-slate-200 md:rounded-2xl md:p-2 md:font-semibold md:text-slate-600 md:text-sm max-w-[fit-content]"
+              >
+                SaaS marketing
+              </p>
+            </div>
+            <p class="mt-2 hidden md:block">
+              Every SaaS marketing sites uses the same formula — a hero, feature
+              sections, some testimonials, you know the drill. But some are
+              prettier than others.
+            </p>
+          </div>
+        </div>
+        <!-- These are the texts for each templates body text-->
+        <div class="flex overflow-x-auto md:hidden mb-10 px-4">
+          <p class="template-sm-text">
+            We've actually published four info products ourselves and this
+            landing page is honestly better than the sites we designed for all
+            of those.
+          </p>
+          <p class="template-sm-text hidden">
+            You've ordered your SM7B, boom arm, and a bunch of acoustic foam.
+            With this template, you can finally stop procatinating and record
+            your first episode.
+          </p>
+          <p class="template-sm-text hidden">
+            Writing Documentation is enough to make you rip your hair out
+            without worrying about the design. Let us help you keep a few
+            strands.
+          </p>
+          <p class="template-sm-text hidden">
+            Every SaaS marketing sites uses the same formula — a hero, feature
+            sections, some testimonials, you know the drill. But some are
+            prettier than others.
+          </p>
+        </div>
+        <!-- This contains the images for each heading -->
+        <div class="grid grid-cols-1">
+          <!-- Premier -->
+          <img
+            src="img/preview.png"
+            alt="Premier template"
+            class="template-img sm:rounded-2xl"
+          />
+          <!-- Transmit -->
+          <img
+            src="img/preview (2).png"
+            alt="Transmit template"
+            class="template-img hidden sm:rounded-2xl"
+          />
+          <!-- Syntax -->
+          <img
+            src="img/preview (3).png"
+            alt="Syntax template"
+            class="template-img hidden sm:rounded-2xl"
+          />
+          <!-- Salient -->
+          <img
+            src="img/preview (4).png"
+            alt="Salient template"
+            class="template-img hidden sm:rounded-2xl"
+          />
+        </div>
+      </section>
+    </main>
+    <!-- This is my footer -->
+    <footer class="w-full border-t border-slate-400 py-8">
+      <!-- The Tailwind css UI logo, fixed width and height -->
+        <a
+        href="#"
+        class="w-40 h-6 flex justify-between items-center cursor-pointer mx-auto "
+        >
+        <img
+          src="img/Tailwind-CSS1.svg"
+          width="34.40"
+          height="20.57"
+          alt="tailwind logo"
+        />
+        <div class="flex items-center font-medium text-[26px] align-middle">
+          <h2 class="leading-[19.11px]">tailwind</h2>
+        </div>
+        <div
+          class="border-2 border-slate-950 rounded w-[18.72px] h-[18.86px] flex items-center justify-center text-xs leading-[12px] font-medium"
+        >
+          UI
+        </div>
+        </a>
+        <p class="text-center mt-6 text-slate-500">&#169; 2024 Tailwind Labs Inc. All rights reserved.</p>
+        <div class="text-center mt-20 mb-10">
+          <a href="" class="px-4 font-semibold">Privacy policy</a>
+          <a href="" class="border-l borderl-slate-400 px-4 font-semibold">Changelog</a>
+        </div>
+    </footer>
+
+  </body>
+  <script src="js/main.js"></script>
+</html>
