@@ -47,11 +47,13 @@ keepPurpleHover(recentAndAdd);
 const menu = document.getElementById("expanded-menu");
 const closeMenuBtn = document.getElementById("btn-close");
 const openMenuBtn = document.getElementById("hamburger-icon");
-const expandedMenu = document.querySelector('#expanded-menu');
+const expandedContent = document.querySelector('#expanded-content');
+const backDrop = document.querySelector('.backdrop-blur-sm');
 
 openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
-expandedMenu.addEventListener('click', toggleMenu);
+expandedContent.addEventListener('click', toggleMenu);
+backDrop.addEventListener('click', toggleMenu);
 
 // For the component section
 // constants
