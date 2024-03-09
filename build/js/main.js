@@ -1,18 +1,20 @@
 // FUNCTIONS
 
 // This function leaves the hover on the last hovered on list option
-function keepPurpleHover(arrName) {
+function keepHover(arrName, classToggled) {
   arrName.forEach((element) => {
     element.addEventListener("mouseover", () => {
-      element.classList.add("keep-purple-hover");
+      element.classList.add('' + classToggled);
       arrName.forEach((item) => {
         if (item !== element) {
-          item.classList.remove("keep-purple-hover");
+          item.classList.remove(''+ classToggled);
         }
       });
     });
   });
 }
+
+
 
 // This function toggles the expanded nav bar
 function toggleMenu() {
@@ -21,6 +23,15 @@ function toggleMenu() {
   document.body.classList.toggle("h-screen");
   document.body.classList.toggle("overflow-hidden");
 }
+
+// This toggles my switch
+const mySwitches = document.querySelectorAll('.switch');
+mySwitches.forEach(mySwitch => {
+  mySwitch.addEventListener('click', function() {
+    mySwitch.classList.toggle('checked');
+  });
+})
+
 
 // FOR NEWSLETTER SECTION
 const newsExisting = document.querySelectorAll(".news-existing");
@@ -37,11 +48,15 @@ newsExisting.forEach((element) => {
 
 // FOR THE ASSIGNED NAMES SECTIONS
 const assignedNames = document.querySelectorAll(".assigned-names");
-keepPurpleHover(assignedNames);
+keepHover(assignedNames, 'purple-hover');
 
 // FOR RECENT SEARCHES AND ADD SECTIONS
 const recentAndAdd = document.querySelectorAll(".recent_add");
-keepPurpleHover(recentAndAdd);
+keepHover(recentAndAdd, 'purple-hover');
+
+//For Appearances
+const appearances = document.querySelectorAll('.appearance');
+keepHover(appearances, 'bg-slate-50')
 
 // For expand menu  section
 const menu = document.getElementById("expanded-menu");
@@ -102,113 +117,88 @@ componentsHeadings.forEach((element, headingIndex) => {
   });
 });
 
-// This works for the templates
-const templateHeadings = document.querySelectorAll(".template-heading");
-const templateSmTexts = document.querySelectorAll(".template-sm-text");
-const templateImg = document.querySelectorAll(".template-img");
+// For the template section
+// iF ANY OF THE SECTION IS CLICKED,
+// We want it to add a colored border,
+// We want the main heading to be colored too
+// colored bg to the subheading, 
+// change the description text on below md screens and change the image
 
-// Loop through headings
-templateHeadings.forEach((heading, headingIndex) => {
-  heading.addEventListener("click", function () {
-    // If Premier clicked
-    let currentHeading = heading;
-    console.log(headingIndex);
-    if (headingIndex === 0) {
-      currentHeading.classList.add("premier-current");
+const templates = document.querySelectorAll('.templates');
+const descriptiveTexts = document.querySelectorAll('.descriptive-text');
+const imgContainer = document.querySelector('.img-container');
 
-      // Remove other color effect from other headings
-      templateHeadings[1].classList.remove("transmit-current");
-      templateHeadings[2].classList.remove("syntax-current");
-      templateHeadings[3].classList.remove("salient-current");
-      // Hide all text except current heading text
-      templateSmTexts.forEach((smtext, smTextIndex) => {
-        if (smTextIndex === headingIndex) {
-          smtext.classList.remove("hidden");
+templates.forEach((template, templateIndex) => {
+  template.addEventListener('click', function() {
+    console.log(templateIndex);
+    if(templateIndex === 0) {
+      template.classList.add('primer-current');
+      templates[1].classList.remove('transmit-current');
+      templates[2].classList.remove('syntax-current');
+      templates[3].classList.remove('salient-current');
+      imgContainer.classList.add('translate-x-[0%]');
+      imgContainer.classList.remove('translate-x-[-100%]');
+      imgContainer.classList.remove('translate-x-[-200%]');
+      imgContainer.classList.remove('translate-x-[-300%]');
+      descriptiveTexts.forEach((text, textIndex) => {
+        if(textIndex === templateIndex){
+          text.classList.remove('hidden');
         } else {
-          smtext.classList.add("hidden");
-        }
-      });
-      // Hide all Images except current heading Img
-      templateImg.forEach((img, imgIndex) => {
-        if (imgIndex === headingIndex) {
-          img.classList.remove("hidden");
-        } else {
-          img.classList.add("hidden");
-        }
-      });
-    }
-    // If transmit is clicked
-    else if (headingIndex === 1) {
-      currentHeading.classList.add("transmit-current");
-      console.log("added transmit");
-      // Remove other color effect from other headings
-      templateHeadings[0].classList.remove("premier-current");
-      templateHeadings[2].classList.remove("syntax-current");
-      templateHeadings[3].classList.remove("salient-current");
-      // Hide all text except current heading text
-      templateSmTexts.forEach((smtext, smTextIndex) => {
-        if (smTextIndex === headingIndex) {
-          smtext.classList.remove("hidden");
-        } else {
-          smtext.classList.add("hidden");
-        }
-      });
-      // Hide all Images except current heading Img
-      templateImg.forEach((img, imgIndex) => {
-        if (imgIndex === headingIndex) {
-          img.classList.remove("hidden");
-        } else {
-          img.classList.add("hidden");
+          text.classList.add('hidden');
         }
       });
     }
-    // If syntax is clicked
-    else if (headingIndex === 2) {
-      currentHeading.classList.add("syntax-current");
-      // Remove other color effect from other headings
-      templateHeadings[0].classList.remove("premier-current");
-      templateHeadings[1].classList.remove("transmit-current");
-      templateHeadings[3].classList.remove("salient-current");
-      // Hide all text except current heading text
-      templateSmTexts.forEach((smtext, smTextIndex) => {
-        if (smTextIndex === headingIndex) {
-          smtext.classList.remove("hidden");
+    else if(templateIndex === 1) {
+      template.classList.add('transmit-current');
+      templates[0].classList.remove('primer-current');
+      templates[2].classList.remove('syntax-current');
+      templates[3].classList.remove('salient-current');
+      imgContainer.classList.add('translate-x-[-100%]');
+      imgContainer.classList.remove('translate-x-[0%]');
+      imgContainer.classList.remove('translate-x-[-200%]');
+      imgContainer.classList.remove('translate-x-[-300%]');
+      descriptiveTexts.forEach((text, textIndex) => {
+        if(textIndex === templateIndex){
+          text.classList.remove('hidden');
         } else {
-          smtext.classList.add("hidden");
-        }
-      });
-      // Hide all Images except current heading Img
-      templateImg.forEach((img, imgIndex) => {
-        if (imgIndex === headingIndex) {
-          img.classList.remove("hidden");
-        } else {
-          img.classList.add("hidden");
+          text.classList.add('hidden');
         }
       });
     }
-    // If salient is clicked
-    else if (headingIndex === 3) {
-      currentHeading.classList.add("salient-current");
-      // Remove other color effect from other headings
-      templateHeadings[0].classList.remove("premier-current");
-      templateHeadings[1].classList.remove("transmit-current");
-      templateHeadings[2].classList.remove("syntax-current");
-      // Hide all text except current heading text
-      templateSmTexts.forEach((smtext, smTextIndex) => {
-        if (smTextIndex === headingIndex) {
-          smtext.classList.remove("hidden");
+    else if(templateIndex === 2) {
+      template.classList.add('syntax-current');
+      templates[0].classList.remove('primer-current');
+      templates[1].classList.remove('transmit-current');
+      templates[3].classList.remove('salient-current');
+      imgContainer.classList.add('translate-x-[-200%]');
+      imgContainer.classList.remove('translate-x-[0%]');
+      imgContainer.classList.remove('translate-x-[-100%]');
+      imgContainer.classList.remove('translate-x-[-300%]');
+      descriptiveTexts.forEach((text, textIndex) => {
+        if(textIndex === templateIndex){
+          text.classList.remove('hidden');
         } else {
-          smtext.classList.add("hidden");
+          text.classList.add('hidden');
         }
       });
-      // Hide all Images except current heading Img
-      templateImg.forEach((img, imgIndex) => {
-        if (imgIndex === headingIndex) {
-          img.classList.remove("hidden");
+    }
+    else if(templateIndex === 3) {
+      template.classList.add('salient-current');
+      templates[0].classList.remove('primer-current');
+      templates[1].classList.remove('transmit-current');
+      templates[2].classList.remove('syntax-current');
+
+      imgContainer.classList.add('translate-x-[-300%]');
+      imgContainer.classList.remove('translate-x-[0%]');
+      imgContainer.classList.remove('translate-x-[-100%]');
+      imgContainer.classList.remove('translate-x-[-200%]');
+      descriptiveTexts.forEach((text, textIndex) => {
+        if(textIndex === templateIndex){
+          text.classList.remove('hidden');
         } else {
-          img.classList.add("hidden");
+          text.classList.add('hidden');
         }
       });
     }
   });
-});
+})
