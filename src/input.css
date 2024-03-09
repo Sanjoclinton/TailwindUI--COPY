@@ -13,7 +13,7 @@
     @apply [&>svg]:hover:fill-white;
   }
   .show-border-tick {
-    @apply ring-2 ring-indigo-600;
+    @apply ring-2 ring-indigo-600 [&>div>svg]:block;
   }
  
   .purple-hover {
