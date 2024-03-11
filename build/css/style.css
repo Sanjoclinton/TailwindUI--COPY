@@ -1220,16 +1220,8 @@ video {
   background-color: rgb(255 255 255 / 0.05);
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
 .bg-cover {
   background-size: cover;
-}
-
-.bg-\[calc\(\)\] {
-  background-position: calc();
 }
 
 .bg-no-repeat {
@@ -1790,6 +1782,10 @@ video {
   /* IE and Edge */
 }
 
+.bg-center-left {
+  background-position: -10rem center;
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -1958,6 +1954,10 @@ video {
 
   .sm\:opacity-15 {
     opacity: 0.15;
+  }
+
+  .sm\:sm-center-left {
+    background-position: center left -40rem;
   }
 }
 

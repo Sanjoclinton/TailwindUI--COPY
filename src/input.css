@@ -55,4 +55,10 @@
   .overflow-x-scroll {
     -ms-overflow-style: none; /* IE and Edge */
   }
+  .sm-center-left {
+    background-position: center left -40rem;
+  }
+  .bg-center-left {
+    background-position: -10rem center;
+  }
 }
