@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind UI copy</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon-16x16.png" size="16x16">
-    <link rel="icon" href="favicon-32x32.png" size="32x32">
+    <link rel="icon" href="favicon-16x16.png" size="16x16" />
+    <link rel="icon" href="favicon-32x32.png" size="32x32" />
   </head>
   <!-- When nav is toggled on small screens, I want the body to take screen height and not scroll down-->
   <body class="">
@@ -151,17 +151,17 @@
           <div
             class="flex px-8 py-6 items-center justify-between border-b border-b-slate-200"
           >
-          <svg
-          class="h-6 w-auto"
-          aria-hidden="true"
-          viewBox="0 0 160 24"
-          fill="none"
-        >
-          <path
-            d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z"
-            class="fill-sky-400"
-          ></path>
-        </svg>
+            <svg
+              class="h-6 w-auto"
+              aria-hidden="true"
+              viewBox="0 0 160 24"
+              fill="none"
+            >
+              <path
+                d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z"
+                class="fill-sky-400"
+              ></path>
+            </svg>
             <button id="btn-close">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +205,10 @@
       </div>
     </header>
     <!-- Section 1 -->
-    <section class="overflow-hidden relative">
+    <section
+      class="overflow-hidden relative bg-cover bg-no-repeat bg-[calc(50% - 40.5rem) 1rem] sm:bg-[calc(50% - 163.5rem) 1rem]"
+      style="background-image: url(&quot;img/beams-home@95.jpg&quot;)"
+    >
       <div
         id="hero"
         class="mt-16 sm:mt-20 xl:mt-32 px-4 sm:px-6 lg:px-8 grid grid-cols-1 max-w-[85rem] mx-auto"
@@ -234,16 +237,36 @@
           class="font-semibold col-start-1 row-start-4 mt-10 flex flex-col sm:flex-row text-sm z-10"
         >
           <button
-            class="py-3 px-4 bg-slate-900 rounded-lg border text-white hover:bg-slate-700"
+            class="py-3 px-4 bg-slate-900 rounded-lg border text-white hover:bg-slate-700 flex items-center gap-1 justify-center"
           >
-            Browse components <span class="">&#129046;</span>
+            <p>Browse components</p>
+            <svg
+              class="w-3 hidden sm:inline"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                fill="#ffffff"
+              />
+            </svg>
           </button>
           <button
-            class="mt-4 sm:ml-4 sm:mt-0 py-3 px-4 rounded-lg ring-1 ring-slate-900/10 bg-white/0 hover:ring-slate-900/15"
+            class="mt-4 sm:ml-4 sm:mt-0 py-3 px-4 rounded-lg ring-1 ring-slate-900/10 bg-white/0 hover:ring-slate-900/15 flex items-center justify-center gap-1"
           >
-            Explore templates
-            <span class="">&#129046;</span>
-        </button>
+            <p>Explore templates</p>
+            <svg
+              class="w-3 fill-slate-900 hidden sm:inline"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+              />
+            </svg>
+          </button>
         </div>
         <!-- Row 5 of grid -->
         <!-- This part changes position based on screen size -->
@@ -535,11 +558,9 @@
                 <div class="p-4">
                   <!-- Newsletter -->
                   <div
-                    class="news-existing p-4 bg-white w-[336px] rounded-md show-border-tick ring-1 ring-slate-700/10 shadow-md shadow-black/5 hover:bg-slate-50 "
+                    class="news-existing p-4 bg-white w-[336px] rounded-md show-border-tick ring-1 ring-slate-700/10 shadow-md shadow-black/5 hover:bg-slate-50"
                   >
-                    <div
-                      class="flex font-medium justify-between items-center "
-                    >
+                    <div class="flex font-medium justify-between items-center">
                       <p class="text-slate-900">Newsletter</p>
                       <svg class="h-5 w-5 hidden" fill="none">
                         <path
@@ -559,9 +580,7 @@
                   <div
                     class="news-existing p-4 bg-white w-[336px] rounded-md mt-4 ring-1 ring-slate-700/10 shadow-md shadow-black/5 hover:bg-slate-50"
                   >
-                    <div
-                      class="flex font-medium justify-between items-center "
-                    >
+                    <div class="flex font-medium justify-between items-center">
                       <p class="text-slate-900">Existing customers</p>
                       <svg class="h-5 w-5 hidden" fill="none">
                         <path
@@ -872,9 +891,22 @@
       </p>
       <!-- Browse all components div -->
       <div class="mt-6 mb-16">
-        <a href="" class="text-indigo-600 hover:text-indigo-700 font-semibold"
-          >Browse all components <span class="">&#129046;</span>
-        </a>
+        <button
+          href=""
+          class="text-indigo-600 hover:text-indigo-700 font-semibold fill-indigo-700 hover:fill-indigo-700 flex items-center justify-center gap-2"
+        >
+          <p>Browse all components</p>
+          <svg
+            class="w-3"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </button>
       </div>
       <!-- This is the section with three subsections -->
       <!-- These are the three headings -->
@@ -882,13 +914,19 @@
         class="flex gap-4 md:gap-5 border-t border-slate-400/10 font-semibold"
       >
         <!-- Application UI heading -->
-        <h4 class="components-headings pt-8 md:basis-1/3 template-hover current-component ">
+        <h4
+          class="components-headings pt-8 md:basis-1/3 template-hover current-component"
+        >
           Application UI
         </h4>
         <!--Marketing heading -->
-        <h4 class="components-headings pt-8 md:basis-1/3 template-hover">Marketing</h4>
+        <h4 class="components-headings pt-8 md:basis-1/3 template-hover">
+          Marketing
+        </h4>
         <!-- Ecommerce heading -->
-        <h4 class="components-headings pt-8 md:basis-1/3 template-hover">Ecommerce</h4>
+        <h4 class="components-headings pt-8 md:basis-1/3 template-hover">
+          Ecommerce
+        </h4>
       </div>
       <!-- The text below each heading above -->
       <!-- Only Application UI text shows on small pages initially, the other two are hidden -->
@@ -1253,7 +1291,7 @@
     <!-- This the third section -->
     <!-- This is the templates section -->
     <section id="templates" class="mt-32 overflow-hidden">
-      <div class="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8 ">
+      <div class="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
         <div class="max-w-[42rem]">
           <p class="text-sky-500 font-semibold">Templates</p>
           <h1
@@ -1263,67 +1301,118 @@
           </h1>
         </div>
         <!-- Visually stunning -->
-        <p class=" mt-4 text-slate-700 max-w-xl">
+        <p class="mt-4 text-slate-700 max-w-xl">
           Visually-stunning, easy to customize site templates built with React
           and Next.js. The perfect starting point for your next project and the
           ultimate resource for learning how experts build real websites with
           Tailwind CSS.
         </p>
         <!-- Explore templates -->
-        <div class="text-sky-500 font-semibold mt-4 hover:text-slate-700">
-          <a>Explore all templates <span class="">&#129046;</span></a>
+        <div
+          class="text-sky-500 font-semibold mt-4 hover:text-slate-700 fill-sky-500 hover:fill-sky-700 flex items-center gap-2"
+        >
+          <p>Explore all templates</p>
+          <svg
+            class="w-3"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
         </div>
 
         <div>
-          <div class="mt-16 overflow-x-scroll -mx-4 sm:-mx-6 lg:-mx-0 px-4 sm:px-6 lg:px-0">
-
-            <div class=" border-t border-slate-200 flex space-x-8 md:gap-4">
+          <div
+            class="mt-16 overflow-x-scroll -mx-4 sm:-mx-6 lg:-mx-0 px-4 sm:px-6 lg:px-0"
+          >
+            <div class="border-t border-slate-200 flex space-x-8 md:gap-4">
               <!-- Template Primer -->
-              <div class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover primer-current">
+              <div
+                class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover primer-current"
+              >
                 <div class="flex flex-col md:flex-col-reverse gap-2 md:gap-4">
                   <h3 class="font-semibold leading-7 text-slate-900">Primer</h3>
-                  <h5 class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500">Info product</h5>
+                  <h5
+                    class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500"
+                  >
+                    Info product
+                  </h5>
                 </div>
-                <div class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto">
+                <div
+                  class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto"
+                >
                   We've actually published four info products ourselves and this
-                  landing page is honestly better than the sites we designed for all
-                  of those.
+                  landing page is honestly better than the sites we designed for
+                  all of those.
                 </div>
               </div>
               <!-- Template Transmit -->
-              <div class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover">
+              <div
+                class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover"
+              >
                 <div class="flex flex-col md:flex-col-reverse gap-2 md:gap-4">
-                  <h3 class="font-semibold leading-7 text-slate-900 ">Transmit</h3>
-                  <h5 class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500">Podcast</h5>
+                  <h3 class="font-semibold leading-7 text-slate-900">
+                    Transmit
+                  </h3>
+                  <h5
+                    class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500"
+                  >
+                    Podcast
+                  </h5>
                 </div>
-                <div class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto">
-                  You've ordered your SM7B, boom arm, and a bunch of acoustic foam.
-                  With this template, you can finally stop procatinating and record
-                  your first episode.
+                <div
+                  class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto"
+                >
+                  You've ordered your SM7B, boom arm, and a bunch of acoustic
+                  foam. With this template, you can finally stop procatinating
+                  and record your first episode.
                 </div>
               </div>
               <!-- Template Syntax -->
-              <div class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover">
+              <div
+                class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover"
+              >
                 <div class="flex flex-col md:flex-col-reverse gap-2 md:gap-4">
-                  <h3 class="font-semibold leading-7 text-slate-900 ">Syntax</h3>
-                  <h5 class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500">Documentation</h5>
+                  <h3 class="font-semibold leading-7 text-slate-900">Syntax</h3>
+                  <h5
+                    class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500"
+                  >
+                    Documentation
+                  </h5>
                 </div>
-                <div class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto">
+                <div
+                  class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto"
+                >
                   Writing Documentation is enough to make you rip your hair out
                   without worrying about the design. Let us help you keep a few
                   strands.
                 </div>
               </div>
               <!-- Template Salient -->
-              <div class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover">
-                <div class="flex flex-col md:flex-col-reverse gap-2 md:gap-4">
-                  <h3 class="font-semibold leading-7 text-slate-900 ">Salient</h3>
-                  <h5 class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500">SaaS marketing</h5>
+              <div
+                class="templates pt-4 pb-6 md:pt-8 md:pb-16 flex flex-col lg:flex-auto template-hover"
+              >
+                <div
+                  class="flex flex-col md:flex-col-reverse gap-2 md:gap-4 mr-2 sm:mr-0"
+                >
+                  <h3 class="font-semibold leading-7 text-slate-900">
+                    Salient
+                  </h3>
+                  <h5
+                    class="text-sm md:text-xs md:font-semibold md:rounded-full md:bg-slate-100 min-w-[max-content] md:max-w-[fit-content] md:p-2 md:text-slate-500"
+                  >
+                    SaaS marketing
+                  </h5>
                 </div>
-                <div class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto">
-                  Every SaaS marketing sites uses the same formula — a hero, feature
-                  sections, some testimonials, you know the drill. But some are
-                  prettier than others.
+                <div
+                  class="hidden text-sm text-slate-700 md:block md:w-[35vw] lg:w-auto"
+                >
+                  Every SaaS marketing sites uses the same formula — a hero,
+                  feature sections, some testimonials, you know the drill. But
+                  some are prettier than others.
                 </div>
               </div>
             </div>
@@ -1332,10 +1421,11 @@
           <div class="text-sm flex md:hidden">
             <p class="descriptive-text">
               We've actually published four info products ourselves and this
-                landing page is honestly better than the sites we designed for all
-                of those.
+              landing page is honestly better than the sites we designed for all
+              of those.
             </p>
-            <p class="descriptive-text hidden">You've ordered your SM7B, boom arm, and a bunch of acoustic foam.
+            <p class="descriptive-text hidden">
+              You've ordered your SM7B, boom arm, and a bunch of acoustic foam.
               With this template, you can finally stop procatinating and record
               your first episode.
             </p>
@@ -1352,22 +1442,23 @@
           </div>
         </div>
         <!-- Images -->
-        <div class="flex mt-10 -mx-4 md:mt-0 img-container transition-all duration-500 ease-in-out">
+        <div
+          class="flex mt-10 -mx-4 md:mt-0 img-container transition-all duration-500 ease-in-out"
+        >
           <div class="sm:px-4 min-w-full">
-            <img class="md:rounded-3xl " src="img/preview.png" alt="">
+            <img class="md:rounded-3xl" src="img/preview.png" alt="" />
           </div>
           <div class="sm:px-4 min-w-full">
-            <img class="sm:rounded-3xl " src="img/preview (2).png" alt="">
+            <img class="sm:rounded-3xl" src="img/preview (2).png" alt="" />
           </div>
           <div class="sm:px-4 min-w-full">
-            <img class="sm:rounded-3xl " src="img/preview (3).png" alt="">
+            <img class="sm:rounded-3xl" src="img/preview (3).png" alt="" />
           </div>
           <div class="sm:px-4 min-w-full">
-            <img class="sm:rounded-3xl " src="img/preview (4).png" alt="">
+            <img class="sm:rounded-3xl" src="img/preview (4).png" alt="" />
           </div>
         </div>
       </div>
-      
     </section>
     <!-- This is my footer -->
     <footer class="mx-auto px-4 sm:px-6 lg:px-8 max-w-[85rem] mt-32">

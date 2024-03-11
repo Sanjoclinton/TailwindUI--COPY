@@ -15,7 +15,7 @@
   .show-border-tick {
     @apply ring-2 ring-indigo-600 [&>div>svg]:block;
   }
- 
+
   .purple-hover {
     @apply bg-indigo-600 text-white [&>svg]:stroke-white;
   }
@@ -23,7 +23,7 @@
     @apply cursor-default;
   }
   .template-hover {
-    @apply hover:border-t hover:border-slate-400 [&>div>h5]:hover:text-slate-900 ;
+    @apply hover:border-t hover:border-slate-400 [&>div>h5]:hover:text-slate-900;
   }
   .primer-current {
     @apply border-t border-blue-500 [&>div>h5]:md:bg-blue-500 [&>div>h3]:text-blue-600  [&>div>h5]:md:text-white [&>div>h5]:md:hover:text-white hover:border-blue-500;
@@ -49,11 +49,10 @@
   }
   .overflow-x-scroll::-webkit-scrollbar {
     display: none;
-}
+  }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .overflow-x-scroll {
-    -ms-overflow-style: none;  /* IE and Edge */
+    -ms-overflow-style: none; /* IE and Edge */
   }
-
 }
