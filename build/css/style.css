@@ -1755,6 +1755,17 @@ video {
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.overflow-x-scroll {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;

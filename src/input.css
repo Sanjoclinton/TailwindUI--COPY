@@ -47,4 +47,13 @@
   .checked {
     @apply [&::before]:translate-x-4 [&]:bg-indigo-600;
   }
+  .overflow-x-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .overflow-x-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+
 }
